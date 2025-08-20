@@ -1,3 +1,35 @@
-html {
-    background-color: #f1e1c1;
+html body {
+    background-color: #b46e7c;
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+html #home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+html #home .profile-image {
+    display: flex;
+    width: 80vw;
+    height: 80vw;
+    border-radius: 100vw;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    object-position: 0 -6.25vw; /* 0 -20px */
+}
+
+html #home .profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+html #home #home-button {
+    margin-top: 10vw;
 }
