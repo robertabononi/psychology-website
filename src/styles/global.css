@@ -1,7 +1,7 @@
 html body {
     background-color: #b46e7c;
     display: flex;
-    min-height: 100vh;
+    min-height: 100dvh;
     width: 100vw;
 }
 
@@ -13,15 +13,29 @@ html #home {
     width: 100%;
 }
 
+html #home .home-images {
+    position: relative;
+    height: 92.5vw; /* 296px */
+}
+
 html #home .profile-image {
     display: flex;
     width: 80vw;
     height: 80vw;
-    border-radius: 100vw;
+    border-radius: 21.875vw 0 21.875vw 0; /* 70px 0 70px 0 */
     align-items: center;
     justify-content: center;
     object-fit: cover;
     object-position: 0 -6.25vw; /* 0 -20px */
+}
+
+html #home .logo-image {
+    position: absolute;
+    width: 28.125vw; /* 90px */
+    border-radius: 100vw;
+    bottom: 0;
+    left: 50%;
+    translate: -50%;
 }
 
 html #home .profile-info {
@@ -30,6 +44,52 @@ html #home .profile-info {
     align-items: center;
 }
 
+html #home .profile-info span {
+    font-size: 3.75vw; /* 12px */
+    color: #000000ad;
+}
+
+html #home ol {
+    display: flex;
+    gap: 3.75vw; /* 12px */
+    height: 6.25vw; /* 20px */
+    margin-top: 5vw; /* 16px */
+}
+
+html #home ol li {
+    width: 7.78125vw; /* 25px */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 6.25vw; /* 20px */
+}
+
+html #home ol li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+html #home ol #whatsapp {
+    background-image: url("../assets/images/icon-whatsapp.png");
+}
+
+html #home ol #instagram {
+    background-image: url("../assets/images/icon-instagram.png");
+}
+
+html #home ol #email {
+    background-image: url("../assets/images/icon-email.png");
+}
+
+html #home ol #location {
+    background-image: url("../assets/images/icon-placeholder.png");
+}
+
 html #home #home-button {
-    margin-top: 10vw;
+    margin-top: 10vw; /* 32px */
+    padding: 3.75vw; /* 12px */
+    font-size: 4.375vw; /* 14px */
+    border-radius: 100vw;
+    border: none;
+    background-color: #e7c878;
 }
